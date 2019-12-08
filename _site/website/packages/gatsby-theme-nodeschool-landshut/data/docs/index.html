@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Node School Landshut | landshut</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Node School Landshut" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Repo for organizing the landshut nodeschools" />
+<meta property="og:description" content="Repo for organizing the landshut nodeschools" />
+<link rel="canonical" href="http://localhost:4000/website/packages/gatsby-theme-nodeschool-landshut/data/docs/" />
+<meta property="og:url" content="http://localhost:4000/website/packages/gatsby-theme-nodeschool-landshut/data/docs/" />
+<meta property="og:site_name" content="landshut" />
+<script type="application/ld+json">
+{"headline":"Node School Landshut","url":"http://localhost:4000/website/packages/gatsby-theme-nodeschool-landshut/data/docs/","description":"Repo for organizing the landshut nodeschools","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=6d76b0ba2d8624ca385b93ee4c14684292df09b4">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">landshut</a></h1>
+      
+
+      <h1 id="node-school-landshut">Node School Landshut</h1>
+
+<p>This is our static site generator, powered by <a href="https://www.gatsbyjs.org">gatsby</a></p>
+
+<h2 id="attendees">Attendees</h2>
+
+<p>Want a simple pull request? Add yourself to the data/attendees/ directory. Create a new yaml file with your name, with the following content:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+name: Name
+github: &lt;github id&gt;
+twitter: &lt;optional twitter id&gt;
+</code></pre></div></div>
+
+<p>When in doubt, look at other people in that directory</p>
+
+<h2 id="mentors">Mentors</h2>
+
+<p>If you want to help teach or contribute in anyway, Add yourself to the data/mentors/ directory. Create a new yaml file with your name, with the following content:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+name: Name
+github: &lt;github id&gt;
+twitter: &lt;optional twitter id&gt;
+</code></pre></div></div>
+
+<p>We usually like mentors to have come to a session before, and read up on the https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor section on the nodeschool wiki.</p>
+
+<h1 id="template">Template</h1>
+
+<p>This is heavily based off the NodeSchool Toronto template. It used Jekyll which when I tried it wouldn’t compile properly, and as a Node.js group, figured all Node.js was better.</p>
+
+<h2 id="install-all-dependencies">Install all dependencies</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install
+</code></pre></div></div>
+
+<h2 id="local-development">Local Development</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run dev
+</code></pre></div></div>
+
+<p>This should start gatsby on port 3000</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Everything for your nodeschool event should be managed in the data/ directory</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>data
+├── mentors
+├── attendees
+├── photos
+├── config.js
+├── path-prefix.js
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">/data/mentors</code></strong>: This contains a list of your mentors. One yaml file per mentor. Icons are taken from github</p>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">/data/attendees</code></strong>: This contains a list of any attendees that want to show themselves as part of the community.</p>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">/data/photos</code></strong>: Your events photos. <strong>Not yet implemented</strong></p>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">config.js</code></strong>: Your main configuration file, all your chapter’s specific information should go here</p>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">path-prefix.js</code></strong> : Your specific url for your chapter. So “Landshut” for https://nodeschool.io/Landshut</p>
+  </li>
+</ol>
+
+<h2 id="-deploy">💫 Deploy</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run deploy:github
+</code></pre></div></div>
+
+<p>This will deploy your site to your gh-pages branch of the current repository</p>
+
+<h2 id="todo">Todo</h2>
+
+<p>[ ] Remove scss and replace it with in component emotion (Easier to track down styles)
+[X] Photos (Maybe just order by filename)</p>
+<ul>
+  <li>Maybe an upgrade, date-name.md which has images: [./date-name.jpg] as frontmatter so we can do a lightbox with details/scroll through</li>
+  <li>https://github.com/gatsbyjs/gatsby/issues/7007
+[ ] Switch from using float to css grid
+[ ] Show more future and past events
+[ ] Support gravatar for images instead of just github?</li>
+</ul>
+
+<hr />
+
+<h1 id="old-readme">Old README</h1>
+
+<h1 id="nodeschool-landshut-">NodeSchool Landshut 🇨🇦</h1>
+
+<p>NodeSchool is a series of open source <a href="http://nodeschool.io/">workshoppers</a> that
+teach web software skills.</p>
+
+<p>NodeSchool meetups like NodeSchoolYVR provide a space for people to do the
+workshoppers on their own or with others. The workshopper tutorials are used as
+the course curriculum, while mentors are here to help attendees work through
+challenges. Learn more <a href="http://nodeschool.io/Landshut/">here</a>.</p>
+
+<h2 id="join-our-meetups-">Join our meetups 💻</h2>
+
+<p>RSVP to our scheduled events on <a href="https://www.meetup.com/nodeschool-Landshut">meetup.com</a>.
+Feel free to come 15 minutes early and help set up!</p>
+
+<p>If you’re a sponsor and want to host workshops for new and experienced devs,
+check out the <a href="/website/packages/gatsby-theme-nodeschool-landshut/data/docs/SCHEDULING.html">scheduling</a> doc.</p>
+
+<p>Workshops from before Nov 2017 are archived <a href="https://ti.to/nodeschool-Landshut">here</a>.</p>
+
+<h2 id="talk-with-each-other-️">Talk with each other ⚡️</h2>
+
+<p>Every community needs a reliable way to communicate. To make it easier, we have
+a few ways for everyone to speak with each other. Organizers can be reached through
+all current channels.</p>
+
+<h3 id="current-1-day-max-response-time">Current: 1 day max response time.</h3>
+
+<ul>
+  <li><a href="https://www.meetup.com/nodeschool-Landshut/discussions/">meetup discussion board</a>: Public group discussion</li>
+  <li><a href="https://twitter.com/nodeschoolyvr">twitter</a>: tweet <a href="https://twitter.com/nodeschoolyvr">@nodeschoolyvr</a> for general chat</li>
+  <li><a href="https://github.com/nodeschool/Landshut/issues/">github issues</a>: for planning</li>
+</ul>
+
+<h3 id="phased-out">Phased out</h3>
+
+<ul>
+  <li>~- <a href="https://yvrdev.slack.com">slack</a>: for general chat, planning meetups, and
+questions about workshops if you’re challenging yourself at home. Go to YVRDev slack
+(sign up <a href="https://yvrdev.herokuapp.com/">here</a> if you don’t have it) and join
+the #nodeschool-yvr channel~</li>
+  <li>~- <a href="https://community.Landshuttech.com/c/events/nodeschool">NodeSchool</a> at <a href="https://community.Landshuttech.com">YVR Tech Community</a>: for planning~</li>
+  <li><del><a href="https://www.meetup.com/nodeschool-Landshut">meetup.com</a>: general info</del></li>
+  <li><del><a href="https://gitter.im/nodeschool/Landshut">gitter</a>: general chat</del></li>
+</ul>
+
+<h2 id="want-to-mentor-or-help-organize-">Want to mentor or help organize? 💛</h2>
+
+<p>If you are interested in mentoring, please make a
+<a href="https://github.com/nodeschool/Landshut/pulls">Pull Request</a> to add
+yourself to this list. We also ask you to read over <a href="https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices">Event Mentor Best Practices</a>
+on what it’s like being a mentor prior to signing up!</p>
+
+<h3 id="current-mentors">Current Mentors</h3>
+
+<ul>
+  <li><a href="https://github.com/qard">@qard</a></li>
+  <li><a href="https://github.com/chowdhurian">@chowdhurian</a></li>
+  <li><a href="https://github.com/ayliao">@ayliao</a></li>
+  <li><a href="https://github.com/halkeye">@halkeye</a></li>
+</ul>
+
+<h3 id="past-mentors">Past Mentors</h3>
+
+<ul>
+  <li><a href="https://github.com/lvivier">@lvivier</a></li>
+  <li><a href="https://github.com/gyaresu">@gyaresu</a></li>
+  <li><a href="https://github.com/lrlna">@lrlna</a></li>
+  <li><a href="https://github.com/switters">@switters</a></li>
+  <li><a href="https://github.com/tabruhn">@tabruhn</a></li>
+  <li><a href="https://github.com/forivall">@forivall</a></li>
+  <li><a href="https://github.com/florida">@florida</a></li>
+  <li><a href="https://github.com/normful">@normful</a></li>
+  <li><a href="https://github.com/baldwynn">@baldwynn</a></li>
+  <li><a href="https://github.com/JimFung">@JimFung</a></li>
+  <li><a href="https://github.com/Scoutski">@Scoutski</a></li>
+  <li><a href="https://github.com/lyntco">@lyntco</a></li>
+  <li><a href="https://github.com/emclaren">@emclaren</a></li>
+  <li><a href="https://github.com/fishrock123">@fishrock123</a></li>
+</ul>
+
+<p>If you’ve come to a few NodeSchool events, we encourage you to mentor! :tada:</p>
+
+<h2 id="code-of-conduct">Code of Conduct</h2>
+
+<ul>
+  <li><a href="/website/packages/gatsby-theme-nodeschool-landshut/data/docs/code-of-conduct.html">Code of Conduct for Nodeschool Landshut</a></li>
+  <li><a href="https://adainitiative.org/2013/07/another-way-to-attract-women-to-conferences-photography-policies/">No photography without an individual’s permission</a></li>
+</ul>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>

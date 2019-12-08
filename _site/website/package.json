@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "dev": "lerna run --scope gatsby-theme-nodeschool-landshut dev --stream",
+    "lerna": "lerna",
+    "publish": "lerna publish"
+  },
+  "devDependencies": {
+    "lerna": "^3.18.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Node School Landshut | landshut</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Node School Landshut" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Repo for organizing the landshut nodeschools" />
+<meta property="og:description" content="Repo for organizing the landshut nodeschools" />
+<link rel="canonical" href="http://localhost:4000/website/packages/gatsby-theme-nodeschool/" />
+<meta property="og:url" content="http://localhost:4000/website/packages/gatsby-theme-nodeschool/" />
+<meta property="og:site_name" content="landshut" />
+<script type="application/ld+json">
+{"headline":"Node School Landshut","url":"http://localhost:4000/website/packages/gatsby-theme-nodeschool/","description":"Repo for organizing the landshut nodeschools","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=6d76b0ba2d8624ca385b93ee4c14684292df09b4">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">landshut</a></h1>
+      
+
+      <h1 id="node-school-landshut">Node School Landshut</h1>
+
+<p>This is our static site generator, powered by <a href="https://www.gatsbyjs.org">gatsby</a></p>
+
+<h2 id="attendees">Attendees</h2>
+
+<p>Want a simple pull request? Add yourself to the data/attendees/ directory. Create a new yaml file with your name, with the following content:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+name: Name
+github: &lt;github id&gt;
+twitter: &lt;optional twitter id&gt;
+</code></pre></div></div>
+
+<p>When in doubt, look at other people in that directory</p>
+
+<h2 id="mentors">Mentors</h2>
+
+<p>If you want to help teach or contribute in anyway, Add yourself to the data/mentors/ directory. Create a new yaml file with your name, with the following content:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+name: Name
+github: &lt;github id&gt;
+twitter: &lt;optional twitter id&gt;
+</code></pre></div></div>
+
+<p>We usually like mentors to have come to a session before, and read up on the https://github.com/nodeschool/organizers/wiki/Event-Mentor-Best-Practices#on-being-a-mentor section on the nodeschool wiki.</p>
+
+<h1 id="template">Template</h1>
+
+<p>This is heavily based off the nodeschool toronto template. It used jekyll which when I tried it wouldn’t compile properly, and as a node group, figured all node was better.</p>
+
+<h2 id="install-all-dependencies">Install all dependencies</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install
+</code></pre></div></div>
+
+<h2 id="local-development">Local Development</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run dev
+</code></pre></div></div>
+
+<p>This should start gatsby on port 3000</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Everything for your nodeschool event should be managed in the data/ directory</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>data
+├── mentors
+├── attendees
+├── photos
+├── config.js
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">/data/mentors</code></strong>: This contains a list of your mentors. One yaml file per mentor. Icons are taken from github</p>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">/data/attendees</code></strong>: This contains a list of any attendees that want to show themselves as part of the community.</p>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">/data/photos</code></strong>: Your events photos. <strong>Not yet implemented</strong></p>
+  </li>
+  <li>
+    <p><strong><code class="language-plaintext highlighter-rouge">config.js</code></strong>: Your main configuration file, all your chapter’s specific information should go here</p>
+  </li>
+</ol>
+
+<h2 id="-deploy">💫 Deploy</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run deploy:github
+</code></pre></div></div>
+
+<p>This will deploy your site to your gh-pages branch of the current repository</p>
+
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>
