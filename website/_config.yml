@@ -1,10 +1,10 @@
 # Site settings
-title: Nodeschool Augsburg
+title: Nodeschool Landshut
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Join us and learn coding with us. You are going to learn the basics of node.js. It's a plus if you know some JavaScript beforehand, but if not we can help you out.
-baseurl: "/augsburg"
-url: "http://nodeschool.io/augsburg" # the base hostname & protocol for your site
+baseurl: "/Landshut"
+url: "http://nodeschool.io/landshut" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
