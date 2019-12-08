@@ -4,7 +4,7 @@ email: daniel.hilpoltsteiner@gmail.comp
 description: > # this means to ignore newlines until "baseurl:"
   Join us and learn coding with us. You are going to learn the basics of node.js. It's a plus if you know some JavaScript beforehand, but if not we can help you out.
 baseurl: "/landshut"
-url: "http://nodeschool.io/landshut" # the base hostname & protocol for your site
+url: "http://nodeschool.io" # the base hostname & protocol for your site
 twitter_username: HilpoltsteinerD
 github_username:  danielhilpoltsteiner
 
