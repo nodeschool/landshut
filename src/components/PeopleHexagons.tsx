@@ -44,7 +44,7 @@ export const PeopleHexagons = ({ people }) => (
             ? `https://twitter.com/${person.twitter}`
             : `https://github.com/${person.github}`
         }
-        backgroundImage={`https://avatars3.githubusercontent.com/${person.github}?v=3&amp;s=120`}
+        backgroundImage={`https://avatars3.githubusercontent.com/${person.github}?v=3&amp;s=260`}
         rel="noopener noreferrer"
         target="_blank"
       />
