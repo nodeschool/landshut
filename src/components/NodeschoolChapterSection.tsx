@@ -9,16 +9,20 @@ const NodeSchoolChapterLogo = () => {
           title
         }
       }
-      placeholderImage: file(relativePath: { eq: "nodeschool-landshut-chapter.svg" }) {
+      placeholderImage: file(
+        relativePath: { eq: "nodeschool-landshut-chapter.svg" }
+      ) {
         extension
         publicURL
       }
     }
   `);
   return (
-    <div style={{
-      margin: `auto`,
-    }}>
+    <div
+      style={{
+        margin: `auto`
+      }}
+    >
       <div style={{ width: `100%`, height: `100%` }}>
         <img
           src={data.placeholderImage.publicURL}
@@ -28,20 +32,22 @@ const NodeSchoolChapterLogo = () => {
             marginRight: `auto`,
             display: `block`,
             width: `250px`,
-            maxWidth: `250px`,
+            maxWidth: `250px`
           }}
         />
       </div>
 
-      <h1 style={{
-        fontSize: `50px`,
-        lineHeight: `140%`,
-        textAlign: `center`,
-        fontWeight: `300`,
-        margin: `0 auto 60px`,
-        letterSpacing: `-1px`,
-        color: `#C0493D`, // FIXME - siteMeta color
-      }}>
+      <h1
+        style={{
+          fontSize: `50px`,
+          lineHeight: `140%`,
+          textAlign: `center`,
+          fontWeight: `300`,
+          margin: `0 auto 60px`,
+          letterSpacing: `-1px`,
+          color: `#C0493D` // FIXME - siteMeta color
+        }}
+      >
         Welcome to
         <br />
         {data.site.siteMetadata.title}
@@ -51,4 +57,3 @@ const NodeSchoolChapterLogo = () => {
 };
 
 export default NodeSchoolChapterLogo;
-

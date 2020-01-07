@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import styled from "@emotion/styled";
-import Hexagon from 'react-hexagon';
+import Hexagon from "react-hexagon";
 
 const PeopleContainer = styled.div`
   display: grid;
@@ -39,8 +39,12 @@ export const PeopleHexagons = ({ people }) => (
     {people.map(person => (
       <Hexagon
         key={person.id}
-        href={person.twitter ? `https://twitter.com/${person.twitter}` : `https://github.com/${person.github}`}
-        backgroundImage={`https://avatars3.githubusercontent.com/${ person.github }?v=3&amp;s=120`}
+        href={
+          person.twitter
+            ? `https://twitter.com/${person.twitter}`
+            : `https://github.com/${person.github}`
+        }
+        backgroundImage={`https://avatars3.githubusercontent.com/${person.github}?v=3&amp;s=120`}
         rel="noopener noreferrer"
         target="_blank"
       />
@@ -49,13 +53,13 @@ export const PeopleHexagons = ({ people }) => (
 );
 
 PeopleHexagons.propTypes = {
-  people:  PropTypes.arrayOf(
+  people: PropTypes.arrayOf(
     PropTypes.shape({
       github: PropTypes.string.isRequired,
       twitter: PropTypes.string,
-      id: PropTypes.string,
+      id: PropTypes.string
     })
-  ),
+  )
 };
 
 export default PeopleHexagons;

@@ -9,7 +9,7 @@ module.exports = {
     slack: ``,
     meetupGroup: ``,
     email: ``,
-    mailchimpSubscribeUrl: ``,
+    mailchimpSubscribeUrl: ``
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,14 +17,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/data`,
-      },
+        path: `${__dirname}/data`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-yaml`,
@@ -38,14 +38,14 @@ module.exports = {
             options: {
               // should this be configurable by the end-user?
               maxWidth: 1380,
-              linkImagesToOriginal: false,
-            },
+              linkImagesToOriginal: false
+            }
           },
           { resolve: `gatsby-remark-copy-linked-files` },
-          { resolve: `gatsby-remark-smartypants` },
+          { resolve: `gatsby-remark-smartypants` }
         ],
-        remarkPlugins: [require(`remark-slug`)],
-      },
+        remarkPlugins: [require(`remark-slug`)]
+      }
     },
     `gatsby-plugin-sharp`,
     {
@@ -57,19 +57,19 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/nodeschool-landshut-chapter.svg`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/nodeschool-landshut-chapter.svg` // This path is relative to the root of the site.
+      }
     },
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true,
-        allExtensions: true,
-      },
-    },
+        allExtensions: true
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-  pathPrefix: `/landshut`,
-}
+  pathPrefix: `/landshut`
+};

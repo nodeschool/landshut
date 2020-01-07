@@ -9,7 +9,7 @@ const debug = Debug(`gatsby-theme-nodeschool`);
 //const withDefaults = require(`./src/default-options`);
 
 // Ensure that content directories exist at site-level
-exports.onPreBootstrap = ({ store }/*, themeOptions*/) => {
+exports.onPreBootstrap = ({ store } /*, themeOptions*/) => {
   const { program } = store.getState();
   // const { contentPath, assetPath } = withDefaults(themeOptions)
 
@@ -17,7 +17,7 @@ exports.onPreBootstrap = ({ store }/*, themeOptions*/) => {
     path.join(program.directory, `data/attendees`),
     path.join(program.directory, `data/mentors`),
     path.join(program.directory, `data/photos`),
-    path.join(program.directory, `data/docs`),
+    path.join(program.directory, `data/docs`)
   ];
 
   dirs.forEach(dir => {
@@ -44,12 +44,14 @@ exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: path.basename(createFilePath({ node, getNode })),
+      value: path.basename(createFilePath({ node, getNode }))
     });
   }
 };
 
-exports.createPages = async ({ graphql, actions, reporter }/*, themeOptions*/) => {
+exports.createPages = async (
+  { graphql, actions, reporter } /*, themeOptions*/
+) => {
   const { createPage } = actions;
   // const { basePath } = withDefaults(themeOptions);
 
@@ -73,13 +75,13 @@ exports.createPages = async ({ graphql, actions, reporter }/*, themeOptions*/) =
   }
 
   // Create a page for each Post
-  result.data.allMdx.edges.forEach(({node}) => {
+  result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: docsPageTemplate,
       context: {
-        id: node.id,
-      },
+        id: node.id
+      }
     });
   });
 };
