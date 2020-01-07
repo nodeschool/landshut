@@ -45,7 +45,6 @@ const NodeSchoolChapterLogo = () => {
           fontWeight: `300`,
           margin: `0 auto 60px`,
           letterSpacing: `-1px`,
-          color: `#2C97D4` // FIXME - siteMeta color
         }}
       >
         Welcome to
