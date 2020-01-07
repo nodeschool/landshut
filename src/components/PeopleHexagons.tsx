@@ -7,6 +7,7 @@ const PeopleContainer = styled.div`
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(auto-fit, minmax(120px, 0.25fr));
+  justify-content: center;
 
   width: 100%;
   z-index: 900;
@@ -45,6 +46,7 @@ export const PeopleHexagons = ({ people }) => (
             : `https://github.com/${person.github}`
         }
         backgroundImage={`https://avatars3.githubusercontent.com/${person.github}?v=3&amp;s=260`}
+        backgroundScale="1.01"
         rel="noopener noreferrer"
         target="_blank"
       />
